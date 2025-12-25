@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: gin-demo
+spec:
+  containers:
+    - name: app
+      image: gin-demo:latest
+      env:
+        - name: PORT
+          value: "8888"
