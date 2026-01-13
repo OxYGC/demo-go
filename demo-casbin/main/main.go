@@ -46,6 +46,20 @@ func main() {
 		panic(err)
 	}
 
+	//判断配置是否加载成功
+	//policies, err := enforcer.GetPolicy()
+	//if err != nil {
+	//	log.Fatal("Failed to get policies:", err)
+	//}
+	//fmt.Printf("Loaded %d policy rules\n", len(policies))
+	//
+	//// 检查角色分配（g 策略）
+	//groupings, err := enforcer.GetGroupingPolicy()
+	//if err != nil {
+	//	log.Fatal("Failed to get role assignments:", err)
+	//}
+	//fmt.Printf("Loaded %d role assignments\n", len(groupings))
+	//
 	r := gin.Default()
 
 	// 应用权限中间件到需要保护的路由
